@@ -1,4 +1,4 @@
 - source: project
   netlify:
-    - id: ${{ secrets.NETLIFY_SITE_ID }}
+    - id: "16490d88-ed09-4d74-beea-ff3d7989e25c"
       url: "https://xzhang.netlify.app"
