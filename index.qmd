@@ -36,7 +36,6 @@ format:
 I'm a professor in the [School of Mathematics](https://math.seu.edu.cn/) at the [Southeast University](https://www.seu.edu.cn). I received a PhD in Mathematics from Nankai University's [School of Mathematical Sciences](https://math.nankai.edu.cn/).
 
 
-This is a test of change setting.
 :::
 
 :::
