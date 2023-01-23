@@ -1,0 +1,123 @@
+project:
+  type: website
+
+  preview: 
+    port: 5555
+    browser: true
+    watch-inputs: true
+    navigate: true
+
+  render:
+    - "*.qmd"
+    - "*.md"
+    - "!etc/"
+
+  resources:
+    - "files/**"
+    - "etc/**"
+
+   
+
+freeze: true
+
+bibliography: files/bib/references.bib
+csl: files/bib/chicago-author-date.csl
+
+# Metadata stuff
+pagetitle: "{{< meta title >}} | {{< meta website.title >}}"
+description-meta: "{{< meta description >}}"
+author-meta: "Xin Zhang"
+
+website:
+  title: "Xin Zhang"
+  description: "Xin Zhang is an assistant professor at Georgia State University, researching international NGOs and teaching data science & economics."
+  favicon: "/files/favicon-512.png"
+  site-url: "https://www.xzhang.ink"
+  repo-url: "https://github.com/xzhangseu/MyWebsite"
+
+  # google-analytics: "UA-527449-5"
+
+  #twitter-card: 
+    #image: "/files/profiles/twitter-card-large.png"
+    #card-style: summary_large_image
+    #creator: "@XinZhang"
+    #site: "@XinZhang"
+
+  #open-graph: 
+    #image: "/files/profiles/twitter-card-large.png"
+    #locale: en_US
+  
+  navbar:
+    pinned: true
+
+    left:
+      - text: "About"
+        href: "index.qmd"
+      - text: "CV"
+        href: "cv/index.qmd"
+      - text: "Blog"
+        file: blog/index.qmd
+      - text: "Research"
+        file: research/index.qmd
+      - text: "Teaching"
+        href: "teaching/index.qmd"
+      - text: "Talks"
+        href: "talks/index.qmd"
+      - text: "Now"
+        href: now/index.qmd
+      - text: "Uses"
+        file: uses/index.qmd
+    
+    right:
+      - icon: rss
+        aria-label: rss
+        href: xzhangrss.xml
+      - icon: envelope
+        aria-label: email
+        href: "mailto:xzhangseu@seu.edu.cn"
+      - icon: twitter
+        aria-label: twitter
+        href: https://twitter.com/xzhangnj
+        #rel: me
+      #- icon: mastodon
+      #  aria-label: mastodon
+      #  href: https://fediscience.org/users/andrew/
+        #rel: me
+      - icon: github
+        aria-label: github
+        href: https://github.com/xinzhangseu
+        #rel: me
+      #- icon: youtube
+      #  aria-label: youtube
+      #  href: https://www.youtube.com/andrewheiss
+        #rel: me
+      #- icon: postage-heart-fill
+      #  aria-label: family
+      #  href: https://www.heissatopia.com/
+      - icon: linkedin
+        aria-label: linkedin
+        href: https://www.linkedin.cn/incareer/in/xin-zhang-2017a940
+        #rel: me
+  
+  page-footer:
+    left: |
+      <span class="faux-block">{{< fa brands creative-commons >}} {{< var years >}} Xin Zhang</span>
+      <span class="faux-block">All content licensed under<br>[{{< fa brands creative-commons >}} {{< fa brands creative-commons-by >}} {{< fa brands creative-commons-sa >}} Creative Commons CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)</span>      
+    center: |
+      <span class="faux-block">{{< fa brands orcid >}} <strong>ORCID</strong> [{{< var orcid >}}](https://orcid.org/{{< var orcid >}})</span>
+      <span class="faux-block">{{< fa key >}} [PGP public key]({{< var pgp.key >}}) &emsp; {{< fa fingerprint >}} Fingerprint:</strong><br><span class="fingerprint">{{< var pgp.fingerprint >}}</span></span>
+    right: |
+      <span class="faux-block">Made with {{< fa brands r-project >}} and [Quarto](https://quarto.org/)</span>
+      <span class="faux-block">[View the source at {{< fa brands github >}} GitHub]({{< var github-url >}})</span>
+
+format:
+  html:
+    theme: 
+      - html/ath.scss
+    toc: false
+    code-link: true
+    anchor-sections: true
+    fig-cap-location: margin
+    reference-location: margin
+    footnotes-hover: true
+    highlight-style: monokai
