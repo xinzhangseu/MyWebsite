@@ -9,9 +9,9 @@ URL: https://https://xzhang.netlify.app/,
 Depends: 
     R (>= 4.2.0)
 Imports:
-    jsonlite,
+    rmarkdown,
     knitr,
-    quarto,
+    jsonlite,
     downlit,
     xml2
 Remotes:
