@@ -1,10 +1,8 @@
 {
-  "hash": "38d56338545f2f368a91cbbbb89ac215",
+  "hash": "11c42c07c5a171bcbf6597ff1fc4d8ad",
   "result": {
-    "markdown": "---\ntitle: \"MyWebsite\"\n---\n\n\nThis is a Quarto website.\n\nTo learn more about Quarto websites visit <https://quarto.org/docs/websites>.\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::\n",
-    "supporting": [
-      "index_files"
-    ],
+    "markdown": "---\ntitle: \"Hello there!\"\npagetitle: \"{{< meta website.title >}}\"\ndescription-meta: \"{{< meta website.description >}}\"\nmain-photo: /files/profiles/xzhang.jpg\nmain-photo-square: /files/profiles/xzhang-square.jpg\ntitle-block-banner: \"#CF4446\"\nformat:\n  html:\n    quarto-template-params:\n      banner-header-class: \"home\"  \n---\n\n\n::: {.grid}\n\n::: {.g-col-12 .g-col-sm-4}\n\n\n```{=html}\n<div class=\"grid\" style=\"--bs-columns: 5; row-gap: 0;\">\n  <div class=\"g-col-1 g-col-sm-0\"></div>\n  <div class=\"g-col-3 g-col-sm-5\">\n    <picture>\n      <source media=\"(max-width: 576px)\" srcset=\"{{< meta main-photo-square >}}\">\n      <source media=\"(min-width: 576px)\" srcset=\"{{< meta main-photo >}}\">\n      <img class=\"img-fluid\" src=\"{{< meta main-photo >}}\" alt=\"{{< meta author-meta >}}\">\n    </picture>\n  </div>\n  <div class=\"g-col-1 g-col-sm-0\"></div>\n</div>\n```\n\n\n:::\n\n::: {.g-col-12 .g-col-sm-8}\n\nI'm a professor in the [School of Mathematics](https://math.seu.edu.cn/) at the [Southeast University](https://www.seu.edu.cn). I received a PhD in Mathematics from Nankai University's [School of Mathematical Sciences](https://math.nankai.edu.cn/).\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::\n\n\n:::\n\n:::",
+    "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],

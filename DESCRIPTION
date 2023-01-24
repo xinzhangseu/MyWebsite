@@ -12,6 +12,7 @@ Imports:
     jsonlite,
     knitr,
     quarto,
+    downlit,
     xml2
 Remotes:
     davidsjoberg/ggbump,
