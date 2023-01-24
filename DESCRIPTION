@@ -13,7 +13,8 @@ Imports:
     knitr,
     jsonlite,
     downlit,
-    xml2
+    xml2,
+    code-link
 Remotes:
     davidsjoberg/ggbump,
     giocomai/ganttrify,
